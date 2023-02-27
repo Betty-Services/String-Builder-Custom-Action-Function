@@ -1,0 +1,5 @@
+{
+  "dependencies": [],
+  "functions": ["stringBuilder 1.0"],
+  "includes": ["./functions/utils/"]
+}
