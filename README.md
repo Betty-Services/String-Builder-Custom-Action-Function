@@ -1,47 +1,19 @@
-![Action Validation](https://github.com/betty-services/Custom-Action-Functions-Template/actions/workflows/main.yml/badge.svg?event=push)
+![Action Validation](https://github.com/betty-services/String-Builder-Custom-Action-Function/actions/workflows/main.yml/badge.svg?event=push)
 
-# Custom Action Functions Template
+# String Builder Custom Action Function
 
-This repository can be used to kick-start your new repositories for Custom Action Functions.
+This repository hosts the code for the custom action step found in the [String Builder](https://my.bettyblocks.com/block-store/c06e6842-8e6f-4c56-a34d-aebb8c55e367/) block from the Betty Blocks block store.
 
-### What does this repository include
+## This repository hosts the following steps:
 
-- `config.json`
-  - Simply set your applications' ID (make sure to use the lowest sandboxes' ID) to publish new functions.
-- `.gitignore`
-  - To not commit any unnecessary files.
-- Function validation
-  - Currently only scoped to validate the custom action steps when pushed to the repository.
-- Ready to use jest configuration
-  - Install jest using `npm i -g jest`
-  - Run the `jest` command
-- An example function including an example Jest test script
-- A protected `main` branch that requires pulls to be updated.
+- String Builder
 
-### First steps:
+### String Builder
 
-1.  Create a new repository. Use this repository as a template.
-2.  Pull your repository.
-3.  Run `npm ci` to install all required packages.
-4.  Develop!
+This step allows you to create your own strings with the posibility to insert data.
 
-### To do:
+```
+You can replace your {{ word }} with any value that you want.
+```
 
-- [ ] Automated jest testing
-  - [ ] Include coverage report in `README.md` file
-- [ ] Automated block publishing
-- [ ] Fix hardcoded badge URL in `README.md`
-
----
-
-**Remove the content above when you made a new repository from this template and keep the following:**
-
-# 'Block Name' Custom Action Functions
-
-This repository hosts the code for the custom actions steps found in the [the blocks' name](https://my.bettyblocks.com/block-store/blockId/) from the Betty Blocks block store.
-
-### This repository hosts the following steps:
-
-- Example Function
-
-_Do not forget to update the badge above once this repository has been used._
+When you encapsulate your word (read as `key`)with the curly brackets `{{ }}`, and define it in the key-value mapping below the option, the key will get replaced with the value.
